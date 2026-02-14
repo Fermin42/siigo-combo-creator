@@ -16,6 +16,7 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { Upload, CheckCircle2, AlertCircle, Package } from "lucide-react";
+import { ExampleDownloader } from "@/components/ExampleDownloader";
 
 interface UploadResult {
   code: string;
@@ -167,6 +168,9 @@ const Index = () => {
       </header>
 
       <main className="container mx-auto px-6 py-8 space-y-6 max-w-5xl">
+        {/* Example files */}
+        <ExampleDownloader />
+
         {/* Step 1: Credentials */}
         <CredentialsForm
           credentials={credentials}
