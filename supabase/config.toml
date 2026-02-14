@@ -1,0 +1,4 @@
+project_id = "rvseddkznjzrjdcdzijj"
+
+[functions.siigo-proxy]
+verify_jwt = false
